@@ -13,7 +13,7 @@ const serverCheck = async (req: Request, res: Response, next: NextFunction) => {
     else {
         return res.json({
             Status: res.statusCode,
-            Body: "OKProgramacion-II"
+            Body: "Not found"
         })
     }
 };
