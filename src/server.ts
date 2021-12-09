@@ -46,7 +46,7 @@ router.use((req, res, next) => {
 
 const httpServer = http.createServer(router);
 const PORT: any = process.env.PORT ?? 6060;
-mongoose.connect("mongodb+srv://pacho:basedatos@cluster0.z2iku.mongodb.net/API?retryWrites=true&w=majority").then(async () => {
+mongoose.connect("mongodb+srv://{}:{}@cluster0.z2iku.mongodb.net/API?retryWrites=true&w=majority").then(async () => {
     console.log("Conectado a la base de datos")
 });
 httpServer.listen(PORT, () => console.log(`The server is running on port ${PORT}`));
